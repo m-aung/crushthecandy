@@ -1,4 +1,4 @@
-# Crush The Candy Game
+# Crush The Number Game
 
 # Frameworks
 
@@ -8,9 +8,28 @@
 # MVP (Minimum Viable Product)
 
 - Phase I
-  - [] Create 8 x 8 board
-  - [] Create random candies series to the board
-  - [] Store winnin pairs
-  - [] Define user control
-  - [] Add to scoreboard
-  - [] Gaming score
+  - Create 7 x 7 board
+  - Create random numbers to the board
+  - Add drag control
+- Phase II
+  - Add to scoreboard
+  - Gaming score
+  - connect to social accounts
+
+# Most interesting challenges
+
+- Building bundle for react
+
+  - webpack loaders installations.
+  - spent huge amout of time to figure out the build. Jordan spent over 2 hours to help me out my bugs.
+
+- learning about dragEvent handler
+
+  - huge difference with html event handler.
+  - created each individual function to handle the event in the components.
+  - figured out a new react feature called react-beautiful dnd feature is more advanced and has beautiful features
+
+- new technology learned from this project
+  - learn how to make build the react component bundles
+  - react-beautiful dnd feature
+  - feels more comfortable reading errors from react errors.

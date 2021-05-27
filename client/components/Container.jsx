@@ -1,11 +1,42 @@
-import React from "react";
+import React from 'react';
 
 const Container = (props) => {
-	return (
-		<div className="containerBox">
-			<img src="https://www.thecandyjarby1892.com/wp-content/uploads/2020/03/chupete.png"></img>
-		</div>
-	);
+  const {
+    img,
+    handleDragStart,
+    handleDragEnter,
+    handleDragLeave,
+    handleDragOver,
+    handleDrop,
+    handleDropEnd,
+    draggable,
+  } = props;
+  return (
+    <div
+      className="imgBox"
+      draggable={draggable}
+      onDrag={(e) => {
+        handleDragStart();
+      }}
+      onDragEnter={(e) => {
+        handleDragEnter(e);
+      }}
+      onDragLeave={(e) => {
+        handleDragLeave(e);
+      }}
+      onDragOver={(e) => {
+        handleDragOver(e);
+      }}
+      onDrop={(e) => {
+        handleDrop(e);
+      }}
+      onDragEnd={(e) => {
+        handleDropEnd(e);
+      }}
+    >
+      {img}
+    </div>
+  );
 };
 
 export default Container;

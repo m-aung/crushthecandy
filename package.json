@@ -1,50 +1,62 @@
 {
-	"name": "crushthecandy",
-	"version": "1.0.0",
-	"description": "Game for Fun",
-	"main": "server/server.js",
-	"directories": {
-		"doc": "docs"
-	},
-	"dependencies": {
-		"concurrently": "^6.0.0",
-		"express": "^4.17.1",
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
-		"webpack-dev-server": "^3.11.2"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.13.8",
-		"@babel/preset-env": "^7.13.9",
-		"@babel/preset-react": "^7.12.13",
-		"babel-install": "^2.1.0",
-		"babel-loader": "^8.2.2",
-		"cross-env": "^7.0.3",
-		"html-webpack-plugin": "^5.2.0",
-		"nodemon": "^2.0.7",
-		"prettier": "2.2.1",
-		"webpack": "^5.24.3",
-		"webpack-cli": "^4.5.0"
-	},
-	"babel": {
-		"presets": [
-			"@babel/preset-env",
-			"@babel/preset-react"
-		]
-	},
-	"scripts": {
-		"start": "cross-env NODE_ENV=production nodemon server/server.js",
-		"dev": "cross-env NODE_ENV=development concurrently \" nodemon ./server/server.js\" \"webpack serve --open\"",
-		"build": "cross-env NODE_ENV=production webpack"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/m-aung/crushthecandy.git"
-	},
-	"author": "myoaung",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/m-aung/crushthecandy/issues"
-	},
-	"homepage": "https://github.com/m-aung/crushthecandy#readme"
+  "name": "crushthecandy",
+  "version": "1.0.0",
+  "description": "Game for Fun",
+  "main": "server/server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dom": "^17.0.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "babel-install": "^2.1.0",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.1.1",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.2.0",
+    "nodemon": "^2.0.7",
+    "prettier": "2.2.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production nodemon server/server.js",
+    "dev": "cross-env NODE_ENV=development concurrently \" nodemon ./server/server.js\" \"webpack serve --open\"",
+    "build": "cross-env NODE_ENV=production webpack",
+    "windows": "concurrently \"NODE_ENV=development nodemon server/server.js\" \"NODE_ENV=development webpack serve --open\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-aung/crushthecandy.git"
+  },
+  "author": "myoaung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-aung/crushthecandy/issues"
+  },
+  "homepage": "https://github.com/m-aung/crushthecandy#readme"
 }
